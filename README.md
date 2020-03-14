@@ -24,7 +24,7 @@ Choose one of the following options and follow the instructions to create a deve
 
 1. Clone this repo to your computer.
 1. Open the repo's folder in VS Code.
-1. Using the Command Palette, search for and run the *Reopen in Container* command. VS Code will reopen, start the development environment in Docker, and connect to it.
+1. Using the Command Palette (press `F1` or `Ctrl-Shift-P` or `Cmd-Shift-P` (macOS)), search for and run the *Reopen in Container* command. VS Code will reopen, start the development environment in Docker, and connect to it.
 
 #### Option 2 - Visual Studio Online
 
