@@ -103,7 +103,7 @@ The most basic Durable Functions app contains three functions:
     1. Select *Durable Functions orchestrator*.
     1. Use the default name of *DurableFunctionsOrchestrator*.
 
-    ![Create a function](.devcontainer/media/create-fucnction.png)
+    ![Create a function](.devcontainer/media/create-function.png)
 
 This creates a function in a folder named *DurableFunctionsOrchestrator*. In the folder, you'll find a `function.json` file that contains metadata describing the function.
 
