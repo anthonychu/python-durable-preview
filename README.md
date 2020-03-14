@@ -131,6 +131,6 @@ Congratulations! You've built and ran your first Python Durable Functions app! ð
 
 ## Next steps
 
-* Check out our docs (coming soon)
-* Send us feedback at our GitHub repo (coming soon)
-* Deploy the app to Azure (coming soon)
+* [Check out Durable Functions docs](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python) (Python code samples coming soon)
+* Send us feedback at our GitHub repo (coming really soon)
+* Deploy the app to Azure (coming soon, bits should be deployed to Azure by end of March)
