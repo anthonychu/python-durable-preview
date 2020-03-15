@@ -130,13 +130,23 @@ This creates a function in a folder named *Hello*. In the folder, you'll find a 
 ### Run the app
 
 1. Press `F5` or select *Debug: Start Debugging* from the Command Palette. The function app will start and the debugger will attach.
-1. Because no storage account was set in `local.settings.json`, the Azure Functions VS Code extension should prompt you to select a storage account. Sign into Azure and create a new storage account. You may also select an existing storage account that you have *not* used with Durable Functions.
+1. Because no storage account was set in `local.settings.json`, the Azure Functions VS Code extension should prompt you to select a storage account. Sign in to Azure and create a new storage account. You may also select an existing storage account that you have *not* used with Durable Functions.
+    ![Select storage account](.devcontainer/media/select-storage.png)
+
 1. Once the app is started, click on the *Remote Explorer* icon in the VS Code activity bar.
 1. Under *Environment Details*, port *7071* should already be listed as forwarded. Right-click on it and select *Copy Port URL*.
+    ![Copy URL](.devcontainer/media/copy-url.png)
+
 1. Open another browser window and paste in the copied port URL. A default Function App page should display.
-1. In the location bar, append `api/orchestrators/DurableFunctionsOrchestrator` to the URL to trigger the *DurableFunctionsHttpStart* function and start an instance of *DurableFunctionsOrchestrator*.
+    ![Homepage](.devcontainer/media/homepage.png)
+
+1. In the location bar, append `/api/orchestrators/DurableFunctionsOrchestrator` to the URL to trigger the *DurableFunctionsHttpStart* function and start an instance of *DurableFunctionsOrchestrator*.
+    ![Start orchestration response](.devcontainer/media/http-response.png)
+
 1. The HTTP function should return a set of URLs. Open the `statusQueryGetUri` in a browser window to view the orchestrator function's status.
     > In VS Online, localhost URLs may be returned. Replace `http://localhost` with the VS Online port URL.
+    ![Orchestration status](.devcontainer/media/status.png)
+
 1. Stop debugging by clicking the red *Disconnect* button or press `Shift-F5`.
 
 Congratulations! You've built and ran your first Python Durable Functions app! 🎉
