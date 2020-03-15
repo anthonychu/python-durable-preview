@@ -145,7 +145,7 @@ This creates a function in a folder named *Hello*. In the folder, you'll find a 
 
 1. The HTTP function should return a set of URLs. Open the `statusQueryGetUri` in a browser window to view the orchestrator function's status.
     > In VS Online, localhost URLs may be returned. Replace `http://localhost` with the VS Online port URL.
-    ![Orchestration status](.devcontainer/media/status.png)
+    ![Orchestration status](.devcontainer/media/orchestration-status.png)
 
 1. Stop debugging by clicking the red *Disconnect* button or press `Shift-F5`.
 
