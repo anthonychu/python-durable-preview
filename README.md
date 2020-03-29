@@ -1,4 +1,4 @@
-# Python Durable Functions Preview 🐍🌩
+# Python Durable Functions Early Preview 🐍🌩
 
 Follow this guide to get up and running with Python Durable Functions!
 
