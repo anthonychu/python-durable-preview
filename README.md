@@ -120,7 +120,7 @@ This creates a function in a folder named *DurableFunctionsOrchestrator*. In the
 You'll also find the function in `__init__.py`. An orchestrator is a Python generator function that describes how activity functions are called.
 
 > You may be prompted to install a linter and/or enable IntelliCode. Neither of these are required for this tutorial, but you may click *Install* and *Enable it and Reload Window*, respectively, if you wish.
-> ![Prompts](.devcontainer/meda/prompts.png)
+> ![Prompts](.devcontainer/media/prompts.png)
 
 #### Activity function
 
