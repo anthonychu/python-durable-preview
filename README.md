@@ -163,7 +163,7 @@ This creates a function in a folder named *DurableFunctionsHttpStart*. In the fo
 1. Open another browser window and paste in the copied port URL. A default Function App page should display.
     ![Homepage](.devcontainer/media/homepage.png)
 
-1. In the location bar, append `/api/orchestrators/HelloOrchestrator` to the URL to trigger the *DurableFunctionsHttpStart* function and start an instance of *HelloOrchestrator*.
+1. In the location bar, append `/api/orchestrators/HelloOrchestrator` to the URL and press Enter to trigger the *DurableFunctionsHttpStart* function that then starts an instance of *HelloOrchestrator*.
     ![Start orchestration response](.devcontainer/media/http-response.png)
 
 1. The HTTP function should return a set of URLs. Open the `statusQueryGetUri` in a browser window to view the orchestrator function's status.
