@@ -115,12 +115,11 @@ The most basic Durable Functions app contains three functions:
     | Select a template for your function | Durable Functions orchestrator | Create a Durable Functions orchestration |
     | Provide a function name | HelloOrchestrator | Name of your durable function |
 
+> You may be prompted to install a linter and/or enable IntelliCode. Neither of these are required for this tutorial, but you may click *Install* and *Enable it and Reload Window*, respectively, if you wish.
+
 This creates a function in a folder named *DurableFunctionsOrchestrator*. In the folder, you'll find a `function.json` file that contains metadata describing the function.
 
 You'll also find the function in `__init__.py`. An orchestrator is a Python generator function that describes how activity functions are called.
-
-> You may be prompted to install a linter and/or enable IntelliCode. Neither of these are required for this tutorial, but you may click *Install* and *Enable it and Reload Window*, respectively, if you wish.
-> ![Prompts](.devcontainer/media/prompts.png)
 
 #### Activity function
 
