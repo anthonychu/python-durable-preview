@@ -117,7 +117,7 @@ The most basic Durable Functions app contains three functions:
 
 > You may be prompted to install a linter and/or enable IntelliCode. Neither of these are required for this tutorial, but you may click *Install* and *Enable it and Reload Window*, respectively, if you wish.
 
-This creates a function in a folder named *DurableFunctionsOrchestrator*. In the folder, you'll find a `function.json` file that contains metadata describing the function.
+This creates a function in a folder named *HelloOrchestrator*. In the folder, you'll find a `function.json` file that contains metadata describing the function.
 
 You'll also find the function in `__init__.py`. An orchestrator is a Python generator function that describes how activity functions are called.
 
@@ -163,7 +163,7 @@ This creates a function in a folder named *DurableFunctionsHttpStart*. In the fo
 1. Open another browser window and paste in the copied port URL. A default Function App page should display.
     ![Homepage](.devcontainer/media/homepage.png)
 
-1. In the location bar, append `/api/orchestrators/DurableFunctionsOrchestrator` to the URL to trigger the *DurableFunctionsHttpStart* function and start an instance of *DurableFunctionsOrchestrator*.
+1. In the location bar, append `/api/orchestrators/HelloOrchestrator` to the URL to trigger the *DurableFunctionsHttpStart* function and start an instance of *HelloOrchestrator*.
     ![Start orchestration response](.devcontainer/media/http-response.png)
 
 1. The HTTP function should return a set of URLs. Open the `statusQueryGetUri` in a browser window to view the orchestrator function's status.
