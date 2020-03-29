@@ -54,7 +54,7 @@ The preconfigured development environment includes the Azure Functions Core Tool
     | --- | --- | --- |
     | Specify a folder | Current open workspace folder | |
     | Select a language | Python | |
-    | Python version | Python 3.8 | Azure Functions supports Python 3.6 and above |
+    | Python version | Python 3.7 | Azure Functions supports Python 3.6-3.8 above |
     | Select a template | Skip for now | |
 
 ### Activate virtual environment and install dependencies
