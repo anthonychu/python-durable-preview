@@ -41,7 +41,7 @@ Choose one of the following options and follow the instructions to create a deve
 1. Click *Connect* to open the VS Online in-browser code editor.
     ![VS Online editor](.devcontainer/media/vsonline-editor.png)
 
-> *Note:* If you'd like to connect to this VS Online environment with VS Code on your computer instead of the in-browser editor, ensure that you have installed and signed in to the [VS Online extension](https://marketplace.visualstudio.com/items?itemName=ms-vsonline.vsonline), then click the *Open on Desktop* button on the bottom left of the browser.
+> *Note:* If you'd like to connect to this VS Online environment with VS Code on your computer instead of the in-browser editor, ensure that you have installed and signed in to the [VS Online extension](https://marketplace.visualstudio.com/items?itemName=ms-vsonline.vsonline), then click the *Open in Desktop* button on the bottom left of the browser.
 
 ### Create the Azure Functions project
 
@@ -69,15 +69,6 @@ The preconfigured development environment includes the Azure Functions Core Tool
 
 When you created the project, the Azure Functions VS Code extension automatically created a virtual environment with your selected Python version. You will activate the virtual environment in a terminal and install some dependencies required by Azure Functions and Durable Functions.
 
-1. Open the editor's integrated terminal in the current folder (`` Ctrl-Shift-` ``).
-1. In the integrated terminal, activate the virtual environment in the current folder:
-
-    ```bash
-    source .venv/bin/activate
-    ```
-
-    ![Activate virtual environment](.devcontainer/media/activate-venv.png)
-
 1. Open `requirements.txt` in the editor change its content to the following:
 
     ```
@@ -86,6 +77,16 @@ When you created the project, the Azure Functions VS Code extension automaticall
     ```
 
     Durable Functions requires `azure-functions` version 1.2.0 or greater.
+
+1. Open the editor's integrated terminal in the current folder (`` Ctrl-Shift-` ``).
+
+1. In the integrated terminal, activate the virtual environment in the current folder:
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
+    ![Activate virtual environment](.devcontainer/media/activate-venv.png)
 
 1. In the integrated terminal where the virtual environment is activated, use pip to install the packages we just defined:
 
@@ -117,6 +118,9 @@ The most basic Durable Functions app contains three functions:
 This creates a function in a folder named *DurableFunctionsOrchestrator*. In the folder, you'll find a `function.json` file that contains metadata describing the function.
 
 You'll also find the function in `__init__.py`. An orchestrator is a Python generator function that describes how activity functions are called.
+
+> You may be prompted to install a linter and/or enable IntelliCode. Neither of these are required for this tutorial, but you may click *Install* and *Enable it and Reload Window*, respectively, if you wish.
+> ![Prompts][.devcontainer/meda/prompts.png]
 
 #### Activity function
 
