@@ -1,0 +1,6 @@
+.venv/
+.devcontainer/
+.vscode/
+**/__pycache__/
+local.settings.json
+README.md
