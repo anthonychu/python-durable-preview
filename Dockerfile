@@ -1,7 +1,4 @@
-# Dockerfile based on: https://github.com/Azure/azure-functions-docker/blob/ac27a62/host/3.0/buster/amd64/python/python37/python37.Dockerfile
-
 # Build the runtime from source
-# Use 3.0.13159 or higher for Python worker that's compatible with Durable Functions
 ARG HOST_VERSION=3.0.13159
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS runtime-image
 ARG HOST_VERSION
@@ -24,6 +21,12 @@ RUN apt-get update && \
     unzip /Microsoft.Azure.Functions.ExtensionBundle.1.2.0.zip -d /FuncExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.2.0 && \
     rm -f /Microsoft.Azure.Functions.ExtensionBundle.1.2.0.zip
 
+# Get Python worker 1.1.0
+RUN apt-get update && \
+    apt-get install -y curl && \
+    curl -L -o "/worker.zip" "https://azfunc.visualstudio.com/5293b045-0d0d-4c3a-9abc-d962867a231f/_apis/build/builds/4679/artifacts?artifactName=3.7_LINUX_X64&api-version=5.1&%24format=zip" && \
+    unzip /worker.zip -d /worker && \
+    rm -f /worker.zip
 
 FROM python:3.7-buster AS app-image
 
@@ -78,6 +81,8 @@ RUN apt-get update && \
 
 COPY --from=runtime-image ["/azure-functions-host", "/azure-functions-host"]
 COPY --from=runtime-image [ "/workers/python", "/azure-functions-host/workers/python" ]
+RUN rm -r /azure-functions-host/workers/python/3.7/LINUX/X64
+COPY --from=runtime-image [ "/worker/3.7_LINUX_X64", "/azure-functions-host/workers/python/3.7/LINUX/X64" ]
 COPY --from=runtime-image [ "/FuncExtensionBundles", "/FuncExtensionBundles" ]
 
 COPY --from=app-image ["/app", "/home/site/wwwroot"]
