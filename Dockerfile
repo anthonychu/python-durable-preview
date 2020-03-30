@@ -1,3 +1,5 @@
+# Dockerfile based on: https://github.com/Azure/azure-functions-docker/blob/ac27a62/host/3.0/buster/amd64/python/python37/python37.Dockerfile
+
 # Build the runtime from source
 # Use 3.0.13159 or higher for Python worker that's compatible with Durable Functions
 ARG HOST_VERSION=3.0.13159
