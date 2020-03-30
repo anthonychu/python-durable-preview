@@ -176,7 +176,7 @@ Congratulations! You've built and ran your first Python Durable Functions app! ð
 
 ## Deploy to Azure
 
-Some components need to run Python Durable Functions are not yet available on the Linux Consumption plan in Azure. For now, you'll package the app in a Docker container and deploy it to Azure Function's Elastic Premium plan.
+Some components needed to run Python Durable Functions are not yet available on the Linux Consumption plan in Azure. For now, you'll package the app in a Docker container and deploy it to Azure Function's Elastic Premium plan.
 
 ### Build the container
 
