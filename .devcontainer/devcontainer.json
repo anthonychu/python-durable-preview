@@ -5,7 +5,8 @@
 	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
 
 	"settings":  {
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"extensions.autoUpdate": false
 	},
 
 	"extensions": [
