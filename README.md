@@ -2,9 +2,9 @@
 
 Follow this guide to get up and running with Python Durable Functions!
 
-> **Note:** (2020-03-29) Because updated versions of the Azure Functions Python worker, extension bundles, and templates that are needed for the preview have not yet been published or deployed to Azure, you need to use a dev container with Visual Studio Code Remote for Containers or Visual Studio Online.
+> **Note:** (2020-06-09) Because updated versions of the Azure Functions Python worker, extension bundles, and templates that are needed for the preview have not yet been published or deployed to Azure, you need to use a dev container with Visual Studio Code Remote for Containers or Visual Studio Online.
 >
-> You'll be able to deploy to the Linux Consumption plan in May. For now, you need to deploy to Premium or App Service plan in a container that contains the latest unreleased runtime.
+> You'll be able to deploy to the Linux Consumption plan in June. For now, you need to deploy to Premium or App Service plan in a container that contains the latest unreleased runtime.
 
 ## Prerequisites
 
