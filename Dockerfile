@@ -13,13 +13,13 @@ RUN BUILD_NUMBER=$(echo ${HOST_VERSION} | cut -d'.' -f 3) && \
     mv /azure-functions-host/workers /workers && mkdir /azure-functions-host/workers && \
     rm -rf /root/.local /root/.nuget /src
 
-# Use bundles 1.3.1 or higher
+# Use bundles 1.3.0 or higher
 RUN apt-get update && \
     apt-get install -y gnupg wget unzip && \
-    wget https://functionscdnstaging.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.3.1/Microsoft.Azure.Functions.ExtensionBundle.1.3.1.zip && \
-    mkdir -p /FuncExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.3.1 && \
-    unzip /Microsoft.Azure.Functions.ExtensionBundle.1.3.1.zip -d /FuncExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.3.1 && \
-    rm -f /Microsoft.Azure.Functions.ExtensionBundle.1.3.1.zip
+    wget https://functionscdnstaging.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.3.0/Microsoft.Azure.Functions.ExtensionBundle.1.3.0.zip && \
+    mkdir -p /FuncExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.3.0 && \
+    unzip /Microsoft.Azure.Functions.ExtensionBundle.1.3.0.zip -d /FuncExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/1.3.0 && \
+    rm -f /Microsoft.Azure.Functions.ExtensionBundle.1.3.0.zip
 
 # Get Python worker 1.1.1
 RUN apt-get update && \
