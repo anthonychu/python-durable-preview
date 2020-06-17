@@ -72,8 +72,8 @@ When you created the project, the Azure Functions VS Code extension automaticall
 1. Open `requirements.txt` in the editor change its content to the following:
 
     ```
-    azure-functions>=1.2.0
-    azure-functions-durable>=1.0.0b4
+    azure-functions
+    azure-functions-durable>=1.0.0b5
     ```
 
     Durable Functions requires `azure-functions` version 1.2.0 or greater.
